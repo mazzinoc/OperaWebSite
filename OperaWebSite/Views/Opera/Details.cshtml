@@ -1,0 +1,26 @@
+﻿@model OperaWebSite.Models.Opera
+
+    <fieldset>
+        <legend>Opera Details</legend>
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Title)
+        </div>
+        <div class="display-text">
+            @Html.DisplayFor(model => model.Title)
+        </div>
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Composer)
+        </div>
+        <div class="display-text">
+            @Html.DisplayFor(model => model.Composer)
+        </div>
+        <div class="display-label">
+            @Html.DisplayNameFor(model => model.Year)
+        </div>
+        <div class="display-text">
+            @Html.DisplayFor(model => model.Year)
+        </div>
+
+    </fieldset>
+    <p>@Html.ActionLink("Back to Index", "Index", "Opera")</p>
+

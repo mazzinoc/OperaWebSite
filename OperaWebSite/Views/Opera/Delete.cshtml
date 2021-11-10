@@ -1,0 +1,30 @@
+﻿@model OperaWebSite.Models.Opera
+
+    <h2>Opera Delete</h2>
+    <p>Are you sure?</p>
+
+    @using (Html.BeginForm("Delete", "Opera", FormMethod.Post))
+    {
+        <fieldset>
+            <legend>Opera Details</legend>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.Title)
+            </div>
+            <div class="display-text">
+                @Html.DisplayFor(model => model.Title)
+            </div>
+            <div class="display-label">
+                @Html.DisplayNameFor(model => model.Composer)
+            </div>
+            <div class="display-text">
+                @Html.DisplayFor(model => model.Composer)
+            </div>            
+
+        </fieldset>
+        <p>
+            <input type="Submit" name="Enviar" value="Delete" />
+        </p>
+    }
+        <p>
+            @Html.ActionLink("back to list", "Index", "Opera")
+        </p>    
